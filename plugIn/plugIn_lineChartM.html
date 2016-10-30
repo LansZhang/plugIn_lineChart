@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>折线图</title>
+    <script src="../coreM.js"></script>
+    <script src="../domM.js"></script>
+    <script src="../attr&cssM.js"></script>
+    <script src="../eventM.js"></script>
+    <script src="../ajaxM.js"></script>
+    <script src="plugIn_lineChartM.js"></script>
+</head>
+<body>
+<div></div>
+<script>
+    // 给第一个元素中绘制折线图
+    $('div').css({
+        marginTop: '10px',
+        width: '500px',
+        height: '590px',
+        backgroundColor: 'pink'
+    }).drawLineChart([10, 10, 30, 30, 50, 30, 80, 40]);
+</script>
+</body>
+</html>
